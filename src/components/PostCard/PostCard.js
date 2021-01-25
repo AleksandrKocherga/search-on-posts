@@ -49,13 +49,13 @@ function PostCard({ post }) {
       <div>
         <div>
           <h3>
-            {users &&
+            {users.length > 0 &&
               users.map((user) =>
                 user.id === post.userId ? user.username : false
               )}
           </h3>
           <h4>
-            {users &&
+            {users.length > 0 &&
               users.map((user) =>
                 user.id === post.userId ? user.name : false
               )}
